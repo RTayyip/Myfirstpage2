@@ -1,2 +1,1 @@
-# Myfirstpage2
-İlk Çalışmalarım
+https://rtayyip.github.io/Myfirstpage2/

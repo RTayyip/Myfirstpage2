@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms Demo</title>
+</head>
+<body>
+  <h1> Forms Demo </h1> 
+  <button type="button"> Formun Dışında </button>
+  <form action="/food"> 
+    <button type="button"> Lütfen Bu Formu Gönderme ! </button>
+    <label for="username"> Kullanıcı Adı Giriniz:</label> 
+  <input id="username" type="text" placeholder="Kullanıcı Adı" name="username">
+    <label for="kullanıcışifresi"> Şifrenizi Giriniz </label> 
+    <button> İlet </button>
+  <input id="kullanıcışifresi" type="password" placeholder="Şifre Giriniz">
+    <label for="renksecimi"> Lütfen Bir Renk Seçimi Yapınız</label>
+  <input id="renksecimi" type="color">
+    <label for="telefon"> Telefon numaranızı giriniz</label>
+  <input id="telefon" type="number">
+    <button> Gönder </button> 
+    <input type="submit" value="tıklayınız">
+  </form> 
+
+
+
+
+  <hr> 
+  <form action="https://www.reddit.com/search/"> 
+    <label for="searchreddit"> Redditte Ara </label>
+    <input id="searchreddit" type="text" name="q"> 
+    <button> Redditte Ara </button>
+    </form> 
+
+<hr> 
+  <form action="https://www.google.com/search/"> 
+    <label for="arama"> Google Ara </label>
+    <input type="text" id="arama" name="q">
+    <button> Google'da Ara </button>
+  </form>
+  <hr> 
+  <form action="https://www.youtube.com/results?">
+    <label for="search">Youtube Ara</label>
+    <input type="text"  name="search_videos"  id="search" />
+    <button> Youtube Ara </button>
+  </form>
+  
+<form action="/sonuç">
+  <label for="ikisecim"> Kabul Ediyorum</label>
+  <p> 
+    <label for="xs"> XS </label>
+  <input type="radio" id="xs" name="size" value="xs">
+  <label for="l"> L </label>
+  <input type="radio" id="l" name="size" value="s">
+  <label for="xl"> XL </label>
+  <input type="radio" id="xl" name="size" value="m">
+  </p> 
+  <p> 
+    <label for="animal"> Favori Havyanınızı Seçiniz</label>
+    <select name="animal"  id="animal"> 
+      <option value="fish"> Balık </option>
+      <option value="birds"> Kuş </option> 
+      <option value="dog"> Köpek </option>
+    </select>
+  </p>
+  <p> 
+    <label for="peynirmiktarı"> Peynir Miktarı</label>
+    <input type="range" id="peynirmiktarı" name="cheese_level" min="1" max="10" step="3"/> 
+  </p>
+  <p> 
+    <label for="note"> özel istek </label> <br>
+    <textarea name="note" id="note" cols="20" rows="10" placeholder="Düşüncelerinizi Yazın"> </textarea>
+  </p>
+  <button> Yolla </button>
+</form>
+<h2> Validations </h2>
+<form action="/dummy"> 
+<label for="first"> İsim Giriniz</label> 
+<input type="text" 
+  name="first" 
+  id="first" 
+  required 
+  minlength="5"
+  maxlength="100"> 
+  <input type="url"/> 
+<label for="sifre"> Şifre Giriniz</label>
+<input type="password" name="sifre" id="sifre"> 
+<button> Submit </button>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+// YUNUS EMRE FORM İNCELEME //
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<header>
+<h1>LikeMuShoes</h1>
+<p>Lorem ipsum dolor sit amet consectetur.</p>
+</header>
+<section>
+<form action="/dummy">
+<p>
+<label for="firstname">First Name</label>
+<input type="text" placeholder="First Name" id="firstname" name="firstname">
+<label for="lastname">Last Name</label>
+<input type="text" placeholder="Last Name" id="lastname" name="lastname">
+</p>
+<p>What's your favorite shoes ? </p>
+<p>
+<input type="radio" id="converse" name="favorite" value="">
+<label for="converse">Converse</label>
+<input type="radio" id="adidas" name="favorite" value="">
+<label for="adidas">Adidas</label>
+<input type="radio" id="nike" name="favorite" value="">
+<label for="nike">Nike</label>
+</p>
+<button>Submit</button>
+</form>
+</section>
+
+<article>
+<h2>Nike</h2>
+<figure>
+<img src= "https://images.unsplash.com/photo-1550399865-ec7d23b18e8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=250&q=200">
+<figcaption>Nike Air Max</figcaption>
+</figure>
+<p><strong>$30.00</strong></p>
+
+<p>Free Shipping</p>
+<form action="/dummy">
+<label for="size">Size</label>
+<select name="size" id="size">
+<option value="#"></option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+</select>
+
+<label for="color">Color</label>
+<select name="color" id="color">
+<option value="black">Black</option>
+<option value="green">Green</option>
+<option value="white">White</option>  
+</select>
+
+<label for="quantity">Quantity</label>
+<select name="miktar" id="quantity">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+
+<button>
+Add to cart
+</button>
+</form>
+</article>
+
+<article>
+<h2>Converse</h2>
+<figure>
+<img src="https://images.unsplash.com/photo-1625622176741-a21f738d0756?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=250&q=200" alt="converse">
+<figcaption>White and Black Converse</figcaption>
+</figure>
+<p>Gently used floor model sneakers and discontinued styles at our lowest prices of the year.Get'em before they're gone!</p>
+<p><strong>$45.00</strong></p>
+
+<p>Just One Left!</p>
+
+<form action="/dummy">
+<label for="size">Size</label>
+<select name="size" id="size">
+<option value="#"></option>
+<option value="38">38</option>
+<option value="39" disabled>39</option>
+<option value="40" disabled>40</option>
+</select>
+
+<label for="color">Color</label>
+<select name="color" id="color">
+<option value="black">Black</option>
+<option value="green">Green</option>
+<option value="white">White</option>
+</select>
+
+<label for="quantity">Quantity</label>
+<select name="miktar" id="quantity">
+<option value="1">1</option>
+<option value="2" disabled>2</option>
+<option value="3" disabled>3</option>
+</select>
+<button>Add to Cart</button>
+</form>
+</article>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
